@@ -11,6 +11,7 @@ import { BoBActorSheet } from "./bob-actor-sheet.js";
 import { BoBRoleSheet } from "./bob-role-sheet.js";
 import { BoBChosenSheet } from "./bob-chosen-sheet.js";
 import { BoBMinionSheet } from "./bob-minion-sheet.js";
+import { ActorDirectoryBoB } from "./actor-directory.mjs";
 import * as migrations from "./migration.js";
 /* For Clocks UI */
 import { BoBClockSheet } from "./bob-clock-sheet.js";
@@ -39,6 +40,7 @@ Hooks.once("init", function() {
 
   CONFIG.Item.documentClass = BoBItem;
   CONFIG.Actor.documentClass = BoBActor;
+  CONFIG.ui.actors = ActorDirectoryBoB;
 
   // Register System Settings
   registerSystemSettings();

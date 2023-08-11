@@ -2,7 +2,7 @@
   "id": "band-of-blades",
   "name": "band-of-blades",
   "title": "Band of Blades",
-  "description": "Band of Blades game system.",
+  "description": "Band of Blades game system (patched).",
   "version": "#{VERSION}#",
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
@@ -13,7 +13,9 @@
   },
   "templateVersion": 1,
   "authors": [
-    { "name": "megastruktur" },
+    {
+      "name": "megastruktur"
+    },
     {
       "name": "Andrew Garinger",
       "discord": "agaringer#6498"

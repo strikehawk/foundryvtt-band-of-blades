@@ -137,6 +137,13 @@ export class BoBActor extends Actor {
     }
 
     if ( this.type === "character" ) {
+      this.items.forEach(i => {
+        if (i.type === "class") {
+          this.system.class = i;
+          return;
+        }
+      });
+
       //sets up array of values for specialist skill uses tracking dropdown
       const spec_skills = Object.keys( game.system.model.Actor.character.attributes.specialist.skills );
       let skillArray = {};

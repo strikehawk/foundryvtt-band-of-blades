@@ -1,0 +1,18 @@
+<li class="directory-item document {{@root.documentCls}} flexrow" data-entry-id="{{this.id}}" data-document-id="{{this.id}}">
+    {{#if this.thumbnail}}
+        <img class="thumbnail" title="{{this.name}}" data-src="{{this.thumbnail}}"/>
+    {{/if}}
+    <div class="flex1" style="align-self: center;">
+        <h4 class="entry-name document-name">
+            <a>{{this.name}}</a>
+        </h4>
+        <div class="flexrow" style="margin-left: 8px;">
+            {{#if this.system.class.thumbnail}}
+                <img class="class-thumbnail" title="{{this.system.class.name}}" src="{{this.system.class.thumbnail}}"/>
+            {{/if}}
+            <h4 class="document-name sub-title-class-name">
+                <span>{{this.system.class.name}}</span>
+            </h4>
+        </div>
+    </div>
+</li>
